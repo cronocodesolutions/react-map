@@ -1,0 +1,6 @@
+.country {
+  transition: fill 0.25s;
+}
+.country:hover {
+  fill: green;
+}
