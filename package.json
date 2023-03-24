@@ -8,7 +8,7 @@
     "dev": "vite ./dev --config ./vite.config.ts --mode dev",
     "build": "vite build",
     "build:dev": "vite build --mode dev",
-    "postbuild": "cp LICENSE dist",
+    "postbuild": "cp package.json dist & cp LICENSE dist",
     "compile": "tsc --noEmit --skipLibCheck",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
