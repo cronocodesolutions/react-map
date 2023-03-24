@@ -5,16 +5,16 @@ import path from 'path';
 
 export default defineConfig(({ mode }) => {
   return {
-    plugins: [
-      dts(),
-      reactPlugin(),
-    ],
+    plugins: [dts(), reactPlugin()],
     build: {
       minify: mode !== 'dev',
       lib: {
-        entry: path.resolve(__dirname, './src/index.ts'),
-        fileName: (format) => 'index.js',
+        entry: path.resolve(__dirname, './src/index.tsx'),
+        fileName: (format) => 'index.mjs',
         formats: ['es'],
+      },
+      rollupOptions: {
+        external: ['react', 'react/jsx-runtime'],
       },
     },
   };

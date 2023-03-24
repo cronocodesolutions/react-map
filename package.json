@@ -8,7 +8,7 @@
     "dev": "vite ./dev --config ./vite.config.ts --mode dev",
     "build": "vite build",
     "build:dev": "vite build --mode dev",
-    "postbuild": "cp package.json dist & cp LICENSE dist & rm ./dist/index.d.ts & rm ./dist/index.js",
+    "postbuild": "cp LICENSE dist",
     "compile": "tsc --noEmit --skipLibCheck",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -38,8 +38,5 @@
     "typescript": "^5.0.2",
     "vite": "^4.2.1",
     "vite-plugin-dts": "^2.1.0"
-  },
-  "dependencies": {
-    "@cronocode/react-box": "^1.1.7"
   }
 }
