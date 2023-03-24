@@ -1,0 +1,45 @@
+{
+  "name": "@cronocode/react-map",
+  "version": "0.0.1",
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "scripts": {
+    "dev": "vite ./dev --config ./vite.config.ts --mode dev",
+    "build": "vite build",
+    "build:dev": "vite build --mode dev",
+    "postbuild": "cp package.json dist & cp LICENSE dist & rm ./dist/index.d.ts & rm ./dist/index.js",
+    "compile": "tsc --noEmit --skipLibCheck",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cronocodesolutions/react-map.git"
+  },
+  "keywords": [
+    "react",
+    "box"
+  ],
+  "author": "Maxim Procopenco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cronocodesolutions/react-map/issues"
+  },
+  "homepage": "https://github.com/cronocodesolutions/react-map#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^18.15.7",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "prettier": "^2.8.7",
+    "react": "^18.1.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1",
+    "vite-plugin-dts": "^2.1.0"
+  },
+  "dependencies": {
+    "@cronocode/react-box": "^1.1.7"
+  }
+}
