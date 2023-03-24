@@ -1,9 +1,18 @@
 import data from './data.json';
-import './index.css';
 
 export default function Map() {
   return (
     <div>
+      <style>
+        {`
+        .country {
+          transition: fill 0.25s;
+        }
+        .country:hover {
+          fill: green;
+        }
+        `}
+      </style>
       <svg xmlns="http://www.w3.org/2000/svg" height="90%" viewBox="0 0 1010 666">
         <g>
           {data.map((item) => (

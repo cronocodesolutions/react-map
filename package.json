@@ -1,6 +1,6 @@
 {
   "name": "@cronocode/react-map",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./index.mjs",
   "module": "./index.mjs",
   "types": "./index.d.ts",
